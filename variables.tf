@@ -233,3 +233,9 @@ variable "cicd_bucket_force_destroy" {
   default     = false
   description = "Force destroy the CI/CD S3 bucket even if it's not empty"
 }
+
+variable "loadbalancer_ssl_policy" {
+  type        = "string"
+  default     = "ELBSecurityPolicy-2016-08"
+  description = "Load Balancer SSL Security Policy"
+}

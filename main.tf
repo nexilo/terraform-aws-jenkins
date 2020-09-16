@@ -47,6 +47,7 @@ module "elastic_beanstalk_environment" {
   healthcheck_url         = var.healthcheck_url
   vpc_id                  = var.vpc_id
   loadbalancer_subnets    = var.loadbalancer_subnets
+  loadbalancer_ssl_policy = var.loadbalancer_ssl_policy
   application_subnets     = var.application_subnets
   allowed_security_groups = var.allowed_security_groups
   keypair                 = var.ssh_key_pair
